@@ -5,5 +5,6 @@ fun main() {
     var country = "Romania"
 
     country = "Pakistan"
-    var score: Int
+    var score: String
+
 }
