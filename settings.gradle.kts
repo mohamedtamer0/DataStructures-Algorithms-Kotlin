@@ -1,3 +1,3 @@
 
-rootProject.name = "DataStructures-Algorithms-Kotlin"
+rootProject.name = "DataStructures-Algorithms-Kotlin-RaywenderlichBook"
 

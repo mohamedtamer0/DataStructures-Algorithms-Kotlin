@@ -56,8 +56,10 @@ fun main() {
     println("POP")
     println("Before popping list: $list4")
     val poppedValue = list4.pop()
+    val poppedValue1 = list4.pop()
     println("After popping list: $list4")
     println("Popped value: $poppedValue")
+    println("Popped value: $poppedValue1")
     println("========================")
 
 
