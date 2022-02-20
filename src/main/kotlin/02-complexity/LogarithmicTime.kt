@@ -11,6 +11,9 @@ fun linearContains(value: Int, numbers: List<Int>): Boolean {
 }
  */
 
+
+
+// O(log n)
 fun pseudoBinaryContains(value: Int, numbers: List<Int>): Boolean {
     if (numbers.isEmpty()) return false
     val midIndex = numbers.size / 2
