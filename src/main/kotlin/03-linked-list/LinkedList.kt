@@ -85,7 +85,41 @@ class LinkedList<T : Any> {
         return result
     }
 
-    
+
+    //RemoveLast
+    fun removeLast(): T? {
+        val head = head ?: return null
+        if (head.next == null) return pop()
+        size--
+
+        var prev = head
+        var current = head
+        var next = current.next
+
+        while (next != null) {
+            prev = current
+            current = next
+            next = current.next
+        }
+
+        prev.next = null
+        tail = prev
+        return current.value
+    }
+
+
+    //RemoveAfter
+    fun removeAfter(node: Node<T>): T? {
+        val result = node.next?.value
+        if (node.next == tail) {
+            tail = node
+        }
+        if (node.next != null) {
+            size--
+        }
+        node.next = node.next?.next
+        return result
+    }
 
 
 }

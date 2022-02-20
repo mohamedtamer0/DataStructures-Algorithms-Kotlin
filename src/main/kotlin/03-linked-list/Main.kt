@@ -48,7 +48,7 @@ fun main() {
 
 
 
-    //POP
+    //POP > O(1)
     val list4 = LinkedList<Int>()
     list4.push(3)
     list4.push(2)
@@ -63,6 +63,31 @@ fun main() {
     println("========================")
 
 
+    //RemoveLast > O(n)
+    val list5 = LinkedList<Int>()
+    list5.push(3)
+    list5.push(2)
+    list5.push(1)
+    println("RemoveLast")
+    println("Before removing last node: $list5")
+    val removedValue = list5.removeLast()
+    println("After removing last node: $list5")
+    println("Removed value: $removedValue")
+    println("========================")
+
+
+
+    //RemoveAfter > O(1)
+    val list6 = LinkedList<Int>()
+    list6.push(3)
+    list6.push(2)
+    list6.push(1)
+    println("Before removing at particular index: $list6")
+    val index = 1
+    val node = list6.nodeAt(index - 1)!!
+    val removedAfterValue = list6.removeAfter(node)
+    println("After removing at index $index: $list6")
+    println("Removed value: $removedAfterValue")
 
 
 }
