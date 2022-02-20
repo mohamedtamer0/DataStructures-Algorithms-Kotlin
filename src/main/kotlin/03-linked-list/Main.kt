@@ -29,4 +29,18 @@ fun main() {
     println("Append")
     println(list2)
 
+
+    //Insert
+    val list3 = LinkedList<Int>()
+    list.push(3)
+    list.push(2)
+    list.push(1)
+    println("Before inserting: $list")
+    var midNode = list.nodeAt(1)!!
+    for (i in 1..3) {
+        midNode = list.insert(-1 * i, midNode)
+    }
+    println("After inserting: $list")
+
+
 }
