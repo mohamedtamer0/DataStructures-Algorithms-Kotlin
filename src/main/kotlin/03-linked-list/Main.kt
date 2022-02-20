@@ -12,7 +12,7 @@ fun main() {
     println(node1)
 
 
-    //Push
+    //Push > O(1)
     val list = LinkedList<Int>()
     list.push(3)
     list.push(2)
@@ -21,7 +21,7 @@ fun main() {
     println(list)
 
 
-    //Append
+    //Append > O(1)
     val list2 = LinkedList<Int>()
     list2.append(1)
     list2.append(2)
@@ -30,7 +30,7 @@ fun main() {
     println(list2)
 
 
-    //Insert
+    //Insert > O(1)
     val list3 = LinkedList<Int>()
     list.push(3)
     list.push(2)
