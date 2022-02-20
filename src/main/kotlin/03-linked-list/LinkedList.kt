@@ -71,14 +71,19 @@ class LinkedList<T : Any> {
     }
 
 
+    //POP
+    fun pop(): T? {
+        if (isEmpty()) return null
 
+        val result = head?.value
+        head = head?.next
+        size--
+        if (isEmpty()) {
+            tail = null
+        }
 
-
-
-
-
-
-
+        return result
+    }
 
 
 }
