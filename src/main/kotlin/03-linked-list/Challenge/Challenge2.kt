@@ -3,6 +3,14 @@ package `03-linked-list`.Challenge
 import `03-linked-list`.*
 import example
 
+/*
+Given a linked list, find the middle node of the list. For example:
+1 -> 2 -> 3 -> 4
+// middle is 3
+1 -> 2 -> 3
+// middle is 2
+ */
+
 
 fun <T : Any> LinkedList<T>.getMiddle(): Node<T>? {
     var slow = this.nodeAt(0)
