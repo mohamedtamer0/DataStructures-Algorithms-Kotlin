@@ -115,6 +115,40 @@ fun main() {
     }
     println("========================")
 
+    "removing elements" example {
+        val list8: MutableCollection<Int> = LinkedList()
+        list8.add(3)
+        list8.add(2)
+        list8.add(1)
+        println(list8)
+        list8.remove(1)
+        println(list8)
+    }
+
+    "retaining elements" example {
+        val list9: MutableCollection<Int> = LinkedList()
+        list9.add(3)
+        list9.add(2)
+        list9.add(1)
+        list9.add(4)
+        list9.add(5)
+        println(list9)
+        list9.retainAll(listOf(3, 4, 5))
+        println(list9)
+    }
+
+
+    "remove all elements" example {
+        val list10: MutableCollection<Int> = LinkedList()
+        list10.add(3)
+        list10.add(2)
+        list10.add(1)
+        list10.add(4)
+        list10.add(5)
+        println(list10)
+        list10.removeAll(listOf(3, 4, 5))
+        println(list10)
+    }
 
 
 }
