@@ -1,3 +1,28 @@
 # DataStructures-Algorithms-Kotlin
 
 ![XxqLUSn](https://user-images.githubusercontent.com/51374446/154856068-24fea098-6215-4ec8-87f6-93d772229408.png)
+
+
+- [x] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 001 - Kotlin-standard-library
+- [x] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 002 - Complexity
+- [x] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 003 - Linked-List
+- [x] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 004 - Stack-Data-Structure
+- [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 005 - Queue-data-structure
+- [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 006 - Trees
+- [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 007 - Binary-trees
+- [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 008 - Binary-search-trees
+- [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 009 - Avl-trees
+- [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 010 - Trie
+- [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 011 - Binary-search
+- [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 012 - Heap-data-structure
+- [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 013 - Priority-queue
+- [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 014 - On2-search-algorithms
+- [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 015 - Merge-sort
+- [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 016 - Radix-sort
+- [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 017 - Heap-sort
+- [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 018 - Quicksort
+- [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 019 - Graphs
+- [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 020 - Breadth-first-search
+- [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 021 - Depth-first-search
+- [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 022 - Dijkstras-algorithm
+- [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 023 - Prims-algorithm
