@@ -3,6 +3,7 @@ package `04-stack-data-structure`
 interface Stack<T : Any> {
     fun push(element: T)
     fun pop(): T?
+    fun peek(): T?
 
     val count: Int
         get
@@ -34,5 +35,12 @@ class StackImpl<T : Any> : Stack<T> {
 
     override val count: Int
         get() = storage.size
+
+    override fun peek(): T? {
+        return storage.lastOrNull()
+    }
+
+
+
 
 }
