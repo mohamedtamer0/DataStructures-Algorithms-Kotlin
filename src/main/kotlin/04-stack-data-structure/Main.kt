@@ -17,4 +17,19 @@ fun main() {
         }
         print(stack)
     }
+
+
+    "initializing a stack from a list" example {
+        val list = listOf("A", "B", "C", "D")
+        val stack = StackImpl.create(list)
+        print(stack)
+        println("Popped: ${stack.pop()}")
+    }
+
+    "initializing a stack from an array literal" example {
+        val stack = stackOf(1.0, 2.0, 3.0, 4.0)
+        print(stack)
+        println("Popped: ${stack.pop()}")
+    }
+
 }

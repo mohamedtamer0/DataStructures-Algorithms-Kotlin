@@ -41,6 +41,19 @@ class StackImpl<T : Any> : Stack<T> {
     }
 
 
+    companion object {
+        fun <T : Any> create(items: Iterable<T>): Stack<T> {
+            val stack = StackImpl<T>()
+            for (item in items) {
+                stack.push(item)
+            }
+            return stack
+        }
+    }
 
 
+}
+
+fun <T : Any> stackOf(vararg elements: T): Stack<T> {
+    return StackImpl.create(elements.asList())
 }
