@@ -38,7 +38,20 @@ class RingBuffer<T : Any>(private val size: Int) {
     }
 
     fun read(): T? {
+        return if (!isEmpty) {
+            val element = array[readIndex % size]
+            readIndex += 1
+            element
+        } else {
+            null
+        }
+    }
 
+    override fun toString(): String {
+        val values = (0 until availableSpaceForReading).map { offset ->
+            "${array[(readIndex + offset) % size]!!}"
+        }
+        return values.joinToString(prefix = "[", separator = ", ", postfix = "]")
     }
 
 }
