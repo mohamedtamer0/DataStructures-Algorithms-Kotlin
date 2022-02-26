@@ -4,8 +4,15 @@ fun main() {
 
     val tree = makeBeverageTree()
     //tree.forEachDepthFirst { println(it.value) }
-    tree.forEachLevelOrder { println(it.value) }
+    //tree.forEachLevelOrder { println(it.value) }
 
+    tree.search("ginger ale")?.let {
+        println("Found node: ${it.value}")
+    }
+
+    tree.search("WKD Blue")?.let {
+        println(it.value)
+    } ?: println("Couldn't find WKD Blue")
 
 }
 

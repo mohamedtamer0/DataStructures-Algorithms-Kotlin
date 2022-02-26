@@ -31,4 +31,17 @@ class TreeNode<T : Any>(val value: T) {
     }
 
 
+    fun search(value: T): TreeNode<T>? {
+        var result: TreeNode<T>? = null
+
+        forEachLevelOrder {
+            if (it.value == value) {
+                result = it
+            }
+        }
+
+        return result
+    }
+
+
 }
