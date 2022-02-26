@@ -4,7 +4,6 @@ import `05-queue-data-structure`.base.list.ArrayListQueue
 
 
 typealias Visitor<T> = (TreeNode<T>) -> Unit
-
 class TreeNode<T : Any>(val value: T) {
     private val children: MutableList<TreeNode<T>> = mutableListOf()
 
@@ -30,7 +29,6 @@ class TreeNode<T : Any>(val value: T) {
         }
     }
 
-
     fun search(value: T): TreeNode<T>? {
         var result: TreeNode<T>? = null
 
@@ -42,6 +40,4 @@ class TreeNode<T : Any>(val value: T) {
 
         return result
     }
-
-
 }
