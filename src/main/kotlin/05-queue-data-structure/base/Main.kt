@@ -1,5 +1,6 @@
 package `05-queue-data-structure`.base
 
+import `05-queue-data-structure`.base.doublestack.StackQueue
 import `05-queue-data-structure`.base.linkedlist.LinkedListQueue
 import `05-queue-data-structure`.base.list.ArrayListQueue
 import `05-queue-data-structure`.base.ringbuffer.RingBufferQueue
@@ -34,6 +35,19 @@ fun main() {
 
     "Queue with Ring Buffer" example {
         val queue = RingBufferQueue<String>(10).apply {
+            enqueue("Ray")
+            enqueue("Brian")
+            enqueue("Eric")
+        }
+        println(queue)
+        queue.dequeue()
+        println(queue)
+        println("Next up: ${queue.peek()}")
+    }
+
+
+    "Queue with Double Stack" example {
+        val queue = StackQueue<String>().apply {
             enqueue("Ray")
             enqueue("Brian")
             enqueue("Eric")
