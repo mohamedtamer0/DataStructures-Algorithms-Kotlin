@@ -4,6 +4,13 @@ import `05-queue-data-structure`.base.Queue
 import `05-queue-data-structure`.base.list.ArrayListQueue
 import example
 
+/*:
+ # Queue Challenges
+ ## Challenge 3:
+    Create a Monopoly organizer that always tells you whose turn it is.
+    A great option is to create an extension function for `Queue` that always returns the next player
+ */
+
 fun <T : Any> Queue<T>.nextPlayer(): T? {
     //1
     val person = this.dequeue() ?: return null
