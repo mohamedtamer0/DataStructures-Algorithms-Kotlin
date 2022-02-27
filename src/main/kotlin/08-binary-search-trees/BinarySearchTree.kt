@@ -28,4 +28,25 @@ class BinarySearchTree<T : Comparable<T>> {
     }
 
 
+    fun contains(value: T): Boolean {
+        //1
+        var current = root
+
+        //2
+        while (current != null) {
+            //3
+            if (current.value == value) {
+                return true
+            }
+
+            //4
+            current = if (value < current.value) {
+                current.leftChild
+            } else {
+                current.rightChild
+            }
+        }
+        return false
+    }
+
 }
