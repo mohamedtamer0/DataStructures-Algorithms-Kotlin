@@ -28,6 +28,44 @@ class BinarySearchTree<T : Comparable<T>> {
     }
 
 
+    fun remove(value: T) {
+        root = remove(root, value)
+    }
+
+    private fun remove(
+        node: BinaryNode<T>?,
+        value: T
+    ): BinaryNode<T>? {
+        node ?: return null
+
+        when {
+            value == node.value -> {
+                // 1
+                if (node.leftChild == null && node.rightChild == null) {
+                    return null
+                }
+                // 2
+                if (node.leftChild == null) {
+                    return node.rightChild
+                }
+                // 3
+                if (node.rightChild == null) {
+                    return node.leftChild
+                }
+                // 4
+                node.rightChild?.min?.value?.let {
+                    node.value = it
+                }
+
+                node.rightChild = remove(node.rightChild, node.value)
+            }
+            value < node.value -> node.leftChild = remove(node.leftChild, value)
+            else -> node.rightChild = remove(node.rightChild, value)
+        }
+        return node
+    }
+
+
     fun contains(value: T): Boolean {
         //1
         var current = root

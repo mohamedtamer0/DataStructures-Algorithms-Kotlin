@@ -10,6 +10,9 @@ class BinaryNode<T : Any>(var value: T) {
 
     override fun toString() = diagram(this)
 
+    val min: BinaryNode<T>?
+        get() = leftChild?.min ?: this
+
     private fun diagram(
         node: BinaryNode<T>?,
         top: String = "",

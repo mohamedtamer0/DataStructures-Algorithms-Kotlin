@@ -24,4 +24,13 @@ fun main() {
             println("Couldn't find 5")
         }
     }
+
+
+    "removing a node" example {
+        println("Tree before removal:")
+        println(exampleTree)
+        exampleTree.remove(3)
+        println("Tree after removing root:")
+        println(exampleTree)
+    }
 }
