@@ -21,4 +21,8 @@ fun main() {
     //tree.traverseInOrder { println(it) }
     //tree.traversePreOrder { println(it) }
     tree.traversePostOrder { println(it) }
+
+    //Challenge2
+    val array = tree.serialize()
+    println(tree.deserializeOptimized(array))
 }

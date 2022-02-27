@@ -1,5 +1,7 @@
 package `07-binary-trees`
 
+import `01-kotlin-and-kotlin-standard-library`.max
+
 typealias Visitor<T> = (T) -> Unit
 
 class BinaryNode<T : Any>(var value: T) {
@@ -24,7 +26,6 @@ class BinaryNode<T : Any>(var value: T) {
         } ?: "${root}null\n"
     }
 
-
     fun traverseInOrder(visit: Visitor<T>) {
         leftChild?.traverseInOrder(visit)
         visit(value)
@@ -41,6 +42,50 @@ class BinaryNode<T : Any>(var value: T) {
         leftChild?.traversePostOrder(visit)
         rightChild?.traversePostOrder(visit)
         visit(value)
+    }
+
+
+    /*
+    Challenges
+     */
+    //Challenge1
+    fun height(node: BinaryNode<T>? = this): Int {
+        return node?.let {
+            1 + max(
+                height(node.leftChild),
+                height(node.rightChild)
+            )
+        } ?: -1
+    }
+
+
+    //Challenge2
+    fun traversePreOrderWithNull(visit: (T?) -> Unit) {
+        visit(value)
+        leftChild?.traversePreOrderWithNull(visit) ?: visit(null)
+        rightChild?.traversePreOrderWithNull(visit) ?: visit(null)
+    }
+
+    fun serialize(node: BinaryNode<T> = this): MutableList<T?> {
+        val list = mutableListOf<T?>()
+        node.traversePreOrderWithNull { list.add(it) }
+        return list
+    }
+
+
+    fun deserialize(list: MutableList<T?>): BinaryNode<T>? {
+        val rootValue = list.removeAt(list.size - 1) ?: return null
+
+        val root = BinaryNode<T>(rootValue)
+
+        root.leftChild = deserialize(list)
+        root.rightChild = deserialize(list)
+
+        return root
+    }
+
+    fun deserializeOptimized(list: MutableList<T?>): BinaryNode<T>? {
+        return deserialize(list.asReversed())
     }
 
 
