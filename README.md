@@ -10,7 +10,7 @@
 - [x] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 005 - Queue-data-structure
 - [x] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 006 - Trees
 - [x] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 007 - Binary-trees
-- [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 008 - Binary-search-trees
+- [x] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 008 - Binary-search-trees
 - [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 009 - Avl-trees
 - [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 010 - Trie
 - [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 011 - Binary-search
