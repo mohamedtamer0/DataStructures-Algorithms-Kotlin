@@ -4,10 +4,14 @@ package `09-avl-trees`
 typealias Visitor<T> = (T) -> Unit
 
 class AVLNode<T : Comparable<T>>(var value: T) {
-    var height = 0
+
     var leftChild: AVLNode<T>? = null
     var rightChild: AVLNode<T>? = null
 
+    val min: AVLNode<T>?
+        get() = leftChild?.min ?: this
+
+    var height = 0
 
     val leftHeight: Int
         get() = leftChild?.height ?: -1
@@ -20,12 +24,10 @@ class AVLNode<T : Comparable<T>>(var value: T) {
 
     override fun toString() = diagram(this)
 
-    private fun diagram(
-        node: AVLNode<T>?,
-        top: String = "",
-        root: String = "",
-        bottom: String = ""
-    ): String {
+    private fun diagram(node: AVLNode<T>?,
+                        top: String = "",
+                        root: String = "",
+                        bottom: String = ""): String {
         return node?.let {
             if (node.leftChild == null && node.rightChild == null) {
                 "$root${node.value}\n"
@@ -35,7 +37,6 @@ class AVLNode<T : Comparable<T>>(var value: T) {
             }
         } ?: "${root}null\n"
     }
-
 
     fun traverseInOrder(visit: Visitor<T>) {
         leftChild?.traverseInOrder(visit)
@@ -54,6 +55,5 @@ class AVLNode<T : Comparable<T>>(var value: T) {
         rightChild?.traversePostOrder(visit)
         visit(value)
     }
-
 
 }
