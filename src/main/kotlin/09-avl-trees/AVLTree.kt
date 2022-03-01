@@ -102,7 +102,6 @@ class AVLTree<T : Comparable<T>> {
         return pivot
     }
 
-
     private fun rightRotate(node: AVLNode<T>): AVLNode<T> {
         val pivot = node.leftChild!!
         node.leftChild = pivot.rightChild
@@ -144,5 +143,4 @@ class AVLTree<T : Comparable<T>> {
             else -> node
         }
     }
-
 }

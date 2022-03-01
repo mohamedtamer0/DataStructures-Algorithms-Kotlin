@@ -4,7 +4,6 @@ package `09-avl-trees`
 typealias Visitor<T> = (T) -> Unit
 
 class AVLNode<T : Comparable<T>>(var value: T) {
-
     var leftChild: AVLNode<T>? = null
     var rightChild: AVLNode<T>? = null
 

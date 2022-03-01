@@ -13,7 +13,6 @@ fun main() {
         print(tree)
     }
 
-
     "removing a value" example {
         val tree = AVLTree<Int>()
         tree.insert(15)
