@@ -27,5 +27,25 @@ class Trie<Key : Any> {
         return current.isTerminating
     }
 
+    fun remove(list: List<Key>) {
+        //1
+        var current = root
+        list.forEach { element ->
+            val child = current.children[element] ?: return
+            current = child
+        }
+
+        if (!current.isTerminating) return
+
+        //2
+        current.isTerminating = false
+
+        //3
+        val parent = current.parent
+        while (parent != null && current.children.isEmpty() && !current.isTerminating) {
+            parent.children.remove(current.key)
+            current = parent
+        }
+    }
 
 }
