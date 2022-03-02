@@ -12,8 +12,8 @@
 - [x] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 007 - Binary-trees
 - [x] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 008 - Binary-search-trees
 - [X] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 009 - Avl-trees
-- [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 010 - Trie
-- [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 011 - Binary-search
+- [x] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 010 - Trie
+- [x] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 011 - Binary-search
 - [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 012 - Heap-data-structure
 - [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 013 - Priority-queue
 - [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 014 - On2-search-algorithms
