@@ -48,4 +48,33 @@ class Trie<Key : Any> {
         }
     }
 
+    fun collections(prefix: List<Key>): List<List<Key>> {
+        // 1
+        var current = root
+
+        prefix.forEach { element ->
+            val child = current.children[element] ?: return emptyList()
+            current = child
+        }
+
+        // 2
+        return collections(prefix, current)
+    }
+
+    private fun collections(prefix: List<Key>, node: TrieNode<Key>?): List<List<Key>> {
+        // 1
+        val results = mutableListOf<List<Key>>()
+
+        if (node?.isTerminating == true) {
+            results.add(prefix)
+        }
+
+        // 2
+        node?.children?.forEach { (key, node) ->
+            results.addAll(collections(prefix + key, node))
+        }
+
+        return results
+    }
+
 }
