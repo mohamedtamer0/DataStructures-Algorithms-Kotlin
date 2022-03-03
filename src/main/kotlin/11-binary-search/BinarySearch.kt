@@ -5,7 +5,6 @@ fun <T : Comparable<T>> ArrayList<T>.binarySearch(value: T, range: IntRange): In
     if (range.first > range.last) {
         return null
     }
-
     //1
     val size = range.last - range.first + 1
     val middle = range.first + size / 2
