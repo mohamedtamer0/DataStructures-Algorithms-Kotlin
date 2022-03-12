@@ -9,4 +9,6 @@ fun main() {
     while (!minHeap.isEmpty) { // 4
         println(minHeap.remove())
     }
+
+
 }
