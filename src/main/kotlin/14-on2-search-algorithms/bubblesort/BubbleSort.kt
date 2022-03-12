@@ -4,10 +4,8 @@ import swapAt
 
 
 fun <T : Comparable<T>> MutableList<T>.bubbleSort(showPasses: Boolean = false) {
-
     //1
     if (this.size < 2) return
-
     //2
     for (end in this.lastIndex downTo 1) {
         var swapped = false

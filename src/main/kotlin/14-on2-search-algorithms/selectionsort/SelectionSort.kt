@@ -13,7 +13,6 @@ fun <T : Comparable<T>> MutableList<T>.selectionSort(showPasses: Boolean = false
                 lowest = other
             }
         }
-
         //3
         if (lowest != current) {
             this.swapAt(lowest, current)

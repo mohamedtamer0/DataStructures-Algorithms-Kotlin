@@ -16,7 +16,7 @@
 - [x] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 011 - Binary-search
 - [x] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 012 - Heap-data-structure
 - [x] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 013 - Priority-queue
-- [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 014 - On2-search-algorithms
+- [x] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 014 - On2-search-algorithms
 - [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 015 - Merge-sort
 - [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 016 - Radix-sort
 - [ ] ![#ff5722](https://via.placeholder.com/12/ff5722/000000?text=+) `Uploaded` - 017 - Heap-sort

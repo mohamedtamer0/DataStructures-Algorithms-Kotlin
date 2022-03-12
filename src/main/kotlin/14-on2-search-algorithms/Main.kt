@@ -6,14 +6,12 @@ import example
 
 
 fun main() {
-
     "bubble sort" example {
         val list = arrayListOf(9, 4, 10, 3)
         println("Original: $list")
         list.bubbleSort(true)
         println("Bubble sorted: $list")
     }
-
     "selection sort" example {
         val list = arrayListOf(9, 4, 10, 3)
         println("Original: $list")
@@ -26,5 +24,4 @@ fun main() {
         list.insertionSort(true)
         println("Bubble sorted: $list")
     }
-
 }
