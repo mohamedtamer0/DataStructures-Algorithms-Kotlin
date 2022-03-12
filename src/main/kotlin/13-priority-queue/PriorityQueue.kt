@@ -1,6 +1,7 @@
 package `13-priority-queue`
 
 import ComparableHeapImpl
+import ComparatorHeapImpl
 import Heap
 import java.util.*
 import `05-queue-data-structure`.base.Queue
@@ -27,5 +28,10 @@ abstract class AbstractPriorityQueue<T : Any> : Queue<T> {
 class ComparablePriorityQueueImpl<T : Comparable<T>> : AbstractPriorityQueue<T>() {
 
     override val heap = ComparableHeapImpl<T>()
+
+}
+
+class ComparatorPriorityQueueImpl<T : Any>(private val comparator: Comparator<T>) : AbstractPriorityQueue<T>() {
+    override val heap = ComparatorHeapImpl(comparator)
 
 }
